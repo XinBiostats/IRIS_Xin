@@ -59,7 +59,8 @@ countList = lapply(countList, function(x) { x[rowSums(x) > 0,] })
 countList = lapply(countList, function(x) { x[,colSums(x) > 0] }) 
 
 ###### normalize the count data set
-countList = lapply(countList, function(x) { sweep(x,2,colSums(x),"/") })
+countList = lapply(countList, function(x) { sweep(x,2,colSums(x),"/") }) # 2025-06-10 Xin Ma: This step may convert a sparse matrix to a dense one, which is incompatible with downstream code.
+countList <- lapply(countList, function(x) {as(x,"CsparseMatrix")}) # 2025-06-10 Xin Ma: explicitly convert it to sparse matrix.
 
 ###### check the location list
 for(islice in 1:length(countList)){
