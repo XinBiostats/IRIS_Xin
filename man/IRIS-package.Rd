@@ -1,10 +1,10 @@
-\name{IRIS-package}
-\alias{IRIS-package}
-\alias{IRIS}
+\name{IRISXin-package}
+\alias{IRISXin-package}
+\alias{IRISXin}
 \docType{package}
-\title{\packageTitle{IRIS}}
-\description{\packageDescription{IRIS}}
-\section{Package Content}{\packageIndices{IRIS}}
-\author{\packageAuthor{IRIS}}
-\section{Maintainer}{\packageMaintainer{IRIS}}
+\title{\packageTitle{IRISXin}}
+\description{\packageDescription{IRISXin}}
+\section{Package Content}{\packageIndices{IRISXin}}
+\author{\packageAuthor{IRISXin}}
+\section{Maintainer}{\packageMaintainer{IRISXin}}
 \keyword{package}
